@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mis Datos y Claves</title>
+    <style>
+        body {
+            background-color: #e6f2ff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 30px;
+        }
+        h2 {
+            color: #003366;
+        }
+        .resultado {
+            background: white;
+            padding: 25px;
+            margin: 20px auto;
+            max-width: 500px;
+            border-radius: 10px;
+            text-align: left;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .error {
+            color: red;
+            font-size: 18px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // Pedir datos
+        let nombre = prompt("Ingrese su nombre:");
+        let identificacion = prompt("Ingrese su identificación:");
+
+        // Verificar si los datos son correctos
+        if (nombre === "Sergio" && identificacion === "1080011684") {
+            
+            // Si son correctos: mostrar todo
+            document.write("<h2>👤 Bienvenido, Sergio</h2>");
+            document.write("<p><strong>Identificación:</strong> 1080011684</p>");
+            
+            document.write("<div class='resultado'>");
+            document.write("<strong>📧 Hotmail:</strong> sergfonzam@hotmail.es — clave<br>");
+            document.write("<strong>🎓 Unilibre 1:</strong> sergiol-fontalvoz@unilibre.edu.co — clave<br>");
+            document.write("<strong>🎓 Unilibre 2:</strong> sergiol.fontalvoz@unilibre.edu.co — clave<br>");
+            document.write("<strong>📚 Elibre:</strong> sergiol-fontalvoz@unilibre.edu.co — clave<br>");
+            document.write("<strong>💻 Siul:</strong> 1080011684 — clave:2026Serg.<br>");
+            document.write("<strong>📦 Kactus:</strong> 1080011684 — clave: 2026Serg<br>");
+            document.write("<strong>🛒 Kawak:</strong> sergiol-fontalvoz@unilibre.edu.co — clave<br><br>");
+            document.write("<strong>🏦 Davivienda:</strong> clave<br>");
+            document.write("<strong>💳 Daviplata:</strong> clave<br>");
+            document.write("<strong>🏢 Cajacopi:</strong> clave<br>");
+            document.write("<strong>📝 Otros:</strong> clave");
+            document.write("</div>");
+            
+        } else {
+            // Si NO son correctos: no muestra nada
+            document.write("<p class='error'>Acceso denegado</p>");
+        }
+    
+    </script>
+    <center><img src="img/images.jpg" alt=""></center>
+</body>
+</html>
